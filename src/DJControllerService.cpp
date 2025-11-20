@@ -10,7 +10,26 @@ DJControllerService::DJControllerService(size_t cache_size)
  * TODO: Implement loadTrackToCache method
  */
 int DJControllerService::loadTrackToCache(AudioTrack& track) {
-    // Your implementation here 
+    if(cache.contains(track.get_title())){
+        cache.get(track.get_title());
+        return 1;
+    }else{
+        PointerWrapper<AudioTrack> clone(track.clone());
+        AudioTrack* toInsert = clone.release();
+        if(!toInsert){
+            std::cout<< "[ERROR] Track:" << track.get_title() << "failed to insert \n" ;
+            return 0; //dont know what to return we need to ask lotem
+        }else{
+            toInsert->load();
+            toInsert->analyze_beatgrid();
+            PointerWrapper<AudioTrack> pw(toInsert);
+            if(cache.put(std::move(pw))){
+                return -1;
+            }else{
+                return 0;
+            }
+        }
+    }
     return 0; // Placeholder
 }
 
@@ -28,6 +47,5 @@ void DJControllerService::displayCacheStatus() const {
  * TODO: Implement getTrackFromCache method
  */
 AudioTrack* DJControllerService::getTrackFromCache(const std::string& track_title) {
-    // Your implementation here
-    return nullptr; // Placeholder
+    return cache.get(track_title);
 }
