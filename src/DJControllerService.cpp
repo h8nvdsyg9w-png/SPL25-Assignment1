@@ -17,8 +17,8 @@ int DJControllerService::loadTrackToCache(AudioTrack& track) {
         PointerWrapper<AudioTrack> clone(track.clone());
         AudioTrack* toInsert = clone.release();
         if(!toInsert){
-            std::cout<< "[ERROR] Track:" << track.get_title() << "failed to insert \n" ;
-            return 0; //dont know what to return we need to ask lotem
+            std::cout<< "[DJControllerSrevice] ERROR: Track cloning failed for: " << track.get_title() << " \n" ;
+            return 0; 
         }else{
             toInsert->load();
             toInsert->analyze_beatgrid();
