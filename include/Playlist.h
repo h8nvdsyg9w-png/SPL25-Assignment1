@@ -20,7 +20,17 @@ struct PlaylistNode {
     PlaylistNode* next;
 
     PlaylistNode(AudioTrack* t) : track(t), next(nullptr) {}
-    ~PlaylistNode() = default;
+    PlaylistNode::~PlaylistNode() {
+    std::cout << "Destroying PlaylistNode for track: " << (track ? track->get_title() : "nullptr") << std::endl;
+    if(track)
+        delete track;
+        track  = nullptr;
+    if(next)
+        delete next;
+        next = nullptr;
+}
+
+    
 };
 
 class Playlist {
