@@ -15,6 +15,15 @@ Playlist::~Playlist() {
     delete head;
 
 }
+PlaylistNode::~PlaylistNode() {
+    std::cout << "Destroying PlaylistNode for track: " << (track ? track->get_title() : "nullptr") << std::endl;
+    if(track)
+        delete track;
+        track  = nullptr;
+    if(next)
+        delete next;
+        next = nullptr;
+    }
 
 void Playlist::add_track(AudioTrack* track) {
     if (!track) {
