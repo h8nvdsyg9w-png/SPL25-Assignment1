@@ -22,6 +22,85 @@ Playlist::~Playlist() {
     head = nullptr;
 }
 
+// this method will help me implement Rule of Five
+void Playlist::clear() {
+    PlaylistNode* current = head;
+    while (current != nullptr) {
+        PlaylistNode* nextNode = current->next;
+        delete current->track;
+        delete current;
+        current = nextNode;
+    }
+    head = nullptr;
+    track_count = 0;
+}
+
+// Copy Constractor
+Playlist::Playlist(const Playlist& other)
+    :head(nullptr), playlist_name(other.playlist_name), track_count(0){
+    if (!other.head) return;
+    PlaylistNode* toCopy = other.head;
+    PlaylistNode* lastCopied = nullptr;
+    while (toCopy) {
+        AudioTrack* clonedTrack = toCopy->track->clone().release();
+        PlaylistNode* clonedNode = new PlaylistNode(clonedTrack);
+        if(!head){
+            head = clonedNode;
+        }else{
+            lastCopied->next = clonedNode;
+        }
+        lastCopied = clonedNode;
+        track_count++;
+        toCopy = toCopy->next;
+    }
+}
+
+// Copy Assignment Operator
+Playlist& Playlist::operator=(const Playlist& other){
+    if(this != &other){
+        clear();
+        playlist_name = other.playlist_name;
+        PlaylistNode* toCopy = other.head;
+    PlaylistNode* lastCopied = nullptr;
+    while (toCopy) {
+        AudioTrack* clonedTrack = toCopy->track->clone().release();
+        PlaylistNode* clonedNode = new PlaylistNode(clonedTrack);
+        if(!head){
+            head = clonedNode;
+        }else{
+            lastCopied->next = clonedNode;
+        }
+        lastCopied = clonedNode;
+        track_count++;
+        toCopy = toCopy->next;
+    }
+    }
+    return *this;
+}
+
+// Move Constractor
+Playlist::Playlist(Playlist&& other) noexcept
+    : head(other.head), 
+      playlist_name(std::move(other.playlist_name)), 
+      track_count(other.track_count) 
+{
+    other.head = nullptr;
+    other.track_count = 0;
+}
+
+//Move Assignment Operator
+Playlist& Playlist::operator=(Playlist&& other) noexcept {
+    if (this != &other) {
+        clear();
+        head = other.head;
+        playlist_name = std::move(other.playlist_name);
+        track_count = other.track_count;
+        other.head = nullptr;
+        other.track_count = 0;
+    }
+    return *this;
+}
+
 void Playlist::add_track(AudioTrack* track) {
     if (!track) {
         std::cout << "[Error] Cannot add null track to playlist" << std::endl;

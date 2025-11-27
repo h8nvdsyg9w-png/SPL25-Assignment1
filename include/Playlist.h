@@ -29,6 +29,8 @@ private:
     std::string playlist_name;
     int track_count;
 
+    void clear();
+
 public:
     /**
      * Constructor
@@ -39,6 +41,18 @@ public:
      * Destructor
      */
     ~Playlist();
+
+    // Copy Constractor
+    Playlist(const Playlist& other);
+
+    // Copy Assignment Operator
+    Playlist& operator=(const Playlist& other);
+
+    // Move Constructor
+    Playlist(Playlist&& other) noexcept;
+
+    // Move Assignment Operator
+    Playlist& operator=(Playlist&& other) noexcept;
 
     /**
      * Add a track to the playlist

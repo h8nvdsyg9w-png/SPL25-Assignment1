@@ -45,6 +45,7 @@ AudioTrack::AudioTrack(const AudioTrack& other)
     artists(other.artists),
     duration_seconds(other.duration_seconds),
     bpm(other.bpm),
+    waveform_data(nullptr),
     waveform_size(other.waveform_size)
 {
     //allocate a new array for the new object's values,
@@ -94,6 +95,7 @@ AudioTrack::AudioTrack(AudioTrack&& other) noexcept
     artists(other.artists),
     duration_seconds(other.duration_seconds),
     bpm(other.bpm),
+    waveform_data(nullptr),
     waveform_size(other.waveform_size)
 {
     #ifdef DEBUG
