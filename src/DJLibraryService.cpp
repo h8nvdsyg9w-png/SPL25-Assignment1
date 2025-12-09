@@ -30,13 +30,11 @@ void DJLibraryService::buildLibrary(const std::vector<SessionConfig::TrackInfo>&
         if(curr.type == "MP3"){
             MP3Track* track = new MP3Track(curr.title , curr.artists , curr.duration_seconds ,
                 curr.bpm , curr.extra_param1 , curr.extra_param2);
-            library.push_back(track);   
-            std::cout << "MP3Track created: " << curr.extra_param1 << " " << "kbps" << "\n";         
+            library.push_back(track);           
         }else{
             WAVTrack* track = new WAVTrack(curr.title , curr.artists , curr.duration_seconds ,
                 curr.bpm , curr.extra_param1 , curr.extra_param2);
-            library.push_back(track); 
-            std::cout << "WAVTrack created: " << curr.extra_param1 << "Hz/" << curr.extra_param2 << "bit" << "\n";   
+            library.push_back(track);  
         }
     }
     std::cout << "[INFO] Track library built: " << library.size() << " tracks loaded" << "\n" ;
