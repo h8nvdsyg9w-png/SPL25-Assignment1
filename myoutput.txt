@@ -357,7 +357,7 @@ Added 'Drum's A Weapon' to playlist 'armin_van_buuren_ASOT_1250'
 
 === Cache Status ===
 [LRUCache] Status: 1/4 slots used
-  Slot 0: Right Back (last access: 0)
+  Slot 0: Right Back (last access: 1)
   Slot 1: [EMPTY]
   Slot 2: [EMPTY]
   Slot 3: [EMPTY]
@@ -372,6 +372,7 @@ Added 'Drum's A Weapon' to playlist 'armin_van_buuren_ASOT_1250'
   → Load complete.
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Right Back"
   → Estimated beats: 779  → Compression precision factor: 0.8
+[Sync BPM] Cannot sync - one of the decks is empty.
 [Load Complete] 'Right Back' is now loaded on deck 0
 [Active Deck] Switched to deck 0
 
@@ -392,7 +393,7 @@ Active Deck: 0
 === Cache Status ===
 [LRUCache] Status: 2/4 slots used
   Slot 0: Right Back (last access: 2)
-  Slot 1: Concrete Angel (last access: 2)
+  Slot 1: Concrete Angel (last access: 3)
   Slot 2: [EMPTY]
   Slot 3: [EMPTY]
 ====================
@@ -406,11 +407,10 @@ Active Deck: 0
 [WAVTrack::analyze_beatgrid] Analyzing beat grid for: "Concrete Angel"
   → Estimated beats: 622  → Precision factor: 1 (uncompressed audio)
 [Load Complete] 'Concrete Angel' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Right Back) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Right Back
 Deck 1: Concrete Angel
 Active Deck: 1
 ===================
@@ -428,7 +428,7 @@ Active Deck: 1
 [LRUCache] Status: 3/4 slots used
   Slot 0: Right Back (last access: 2)
   Slot 1: Concrete Angel (last access: 4)
-  Slot 2: Saving Light (last access: 4)
+  Slot 2: Saving Light (last access: 5)
   Slot 3: [EMPTY]
 ====================
 [System] Delegating track transfer to MixingEngineService for: Saving Light
@@ -442,12 +442,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Saving Light"
   → Estimated beats: 634  → Compression precision factor: 1
 [Load Complete] 'Saving Light' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Concrete Angel) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Saving Light
-Deck 1: [EMPTY]
+Deck 1: Concrete Angel
 Active Deck: 0
 ===================
 
@@ -465,7 +464,7 @@ Active Deck: 0
   Slot 0: Right Back (last access: 2)
   Slot 1: Concrete Angel (last access: 4)
   Slot 2: Saving Light (last access: 6)
-  Slot 3: No One On Earth (last access: 6)
+  Slot 3: No One On Earth (last access: 7)
 ====================
 [System] Delegating track transfer to MixingEngineService for: No One On Earth
 
@@ -478,11 +477,10 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "No One On Earth"
   → Estimated beats: 605  → Compression precision factor: 0.8
 [Load Complete] 'No One On Earth' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Saving Light) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Saving Light
 Deck 1: No One On Earth
 Active Deck: 1
 ===================
@@ -498,7 +496,7 @@ Active Deck: 1
 
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
-  Slot 0: Lighter Than Air (last access: 8)
+  Slot 0: Lighter Than Air (last access: 9)
   Slot 1: Concrete Angel (last access: 4)
   Slot 2: Saving Light (last access: 6)
   Slot 3: No One On Earth (last access: 8)
@@ -514,12 +512,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Lighter Than Air"
   → Estimated beats: 582  → Compression precision factor: 0.6
 [Load Complete] 'Lighter Than Air' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (No One On Earth) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Lighter Than Air
-Deck 1: [EMPTY]
+Deck 1: No One On Earth
 Active Deck: 0
 ===================
 
@@ -535,7 +532,7 @@ Active Deck: 0
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
   Slot 0: Lighter Than Air (last access: 10)
-  Slot 1: Tuvan (last access: 10)
+  Slot 1: Tuvan (last access: 11)
   Slot 2: Saving Light (last access: 6)
   Slot 3: No One On Earth (last access: 8)
 ====================
@@ -550,11 +547,10 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Tuvan"
   → Estimated beats: 597  → Compression precision factor: 0.6
 [Load Complete] 'Tuvan' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Lighter Than Air) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Lighter Than Air
 Deck 1: Tuvan
 Active Deck: 1
 ===================
@@ -572,7 +568,7 @@ Active Deck: 1
 [LRUCache] Status: 4/4 slots used
   Slot 0: Lighter Than Air (last access: 10)
   Slot 1: Tuvan (last access: 12)
-  Slot 2: Anahera (last access: 12)
+  Slot 2: Anahera (last access: 13)
   Slot 3: No One On Earth (last access: 8)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Anahera
@@ -587,12 +583,11 @@ Active Deck: 1
   → Estimated beats: 931  → Compression precision factor: 0.8
 [Sync BPM] Syncing BPM from 140 to 132
 [Load Complete] 'Anahera' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Tuvan) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Anahera
-Deck 1: [EMPTY]
+Deck 1: Tuvan
 Active Deck: 0
 ===================
 
@@ -609,7 +604,7 @@ Active Deck: 0
   Slot 0: Lighter Than Air (last access: 10)
   Slot 1: Tuvan (last access: 12)
   Slot 2: Anahera (last access: 14)
-  Slot 3: U (last access: 14)
+  Slot 3: U (last access: 15)
 ====================
 [System] Delegating track transfer to MixingEngineService for: U
 
@@ -621,11 +616,10 @@ Active Deck: 0
 [WAVTrack::analyze_beatgrid] Analyzing beat grid for: "U"
   → Estimated beats: 504  → Precision factor: 1 (uncompressed audio)
 [Load Complete] 'U' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Anahera) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Anahera
 Deck 1: U
 Active Deck: 1
 ===================
@@ -641,7 +635,7 @@ Active Deck: 1
 
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
-  Slot 0: Southern Sun (last access: 16)
+  Slot 0: Southern Sun (last access: 17)
   Slot 1: Tuvan (last access: 12)
   Slot 2: Anahera (last access: 14)
   Slot 3: U (last access: 16)
@@ -657,12 +651,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Southern Sun"
   → Estimated beats: 569  → Compression precision factor: 0.6
 [Load Complete] 'Southern Sun' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (U) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Southern Sun
-Deck 1: [EMPTY]
+Deck 1: U
 Active Deck: 0
 ===================
 
@@ -678,7 +671,7 @@ Active Deck: 0
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
   Slot 0: Southern Sun (last access: 18)
-  Slot 1: Take This (last access: 18)
+  Slot 1: Take This (last access: 19)
   Slot 2: Anahera (last access: 14)
   Slot 3: U (last access: 16)
 ====================
@@ -693,11 +686,10 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Take This"
   → Estimated beats: 625  → Compression precision factor: 0.6
 [Load Complete] 'Take This' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Southern Sun) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Southern Sun
 Deck 1: Take This
 Active Deck: 1
 ===================
@@ -715,7 +707,7 @@ Active Deck: 1
 [LRUCache] Status: 4/4 slots used
   Slot 0: Southern Sun (last access: 18)
   Slot 1: Take This (last access: 20)
-  Slot 2: Intense (last access: 20)
+  Slot 2: Intense (last access: 21)
   Slot 3: U (last access: 16)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Intense
@@ -729,12 +721,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Intense"
   → Estimated beats: 714  → Compression precision factor: 1
 [Load Complete] 'Intense' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Take This) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Intense
-Deck 1: [EMPTY]
+Deck 1: Take This
 Active Deck: 0
 ===================
 
@@ -752,7 +743,7 @@ Active Deck: 0
   Slot 0: Southern Sun (last access: 18)
   Slot 1: Take This (last access: 20)
   Slot 2: Intense (last access: 22)
-  Slot 3: Destination (ASOT 2024 Anthem) (last access: 22)
+  Slot 3: Destination (ASOT 2024 Anthem) (last access: 23)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Destination (ASOT 2024 Anthem)
 
@@ -765,11 +756,10 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Destination (ASOT 2024 Anthem)"
   → Estimated beats: 858  → Compression precision factor: 1
 [Load Complete] 'Destination (ASOT 2024 Anthem)' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Intense) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Intense
 Deck 1: Destination (ASOT 2024 Anthem)
 Active Deck: 1
 ===================
@@ -785,7 +775,7 @@ Active Deck: 1
 
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
-  Slot 0: What Took You So Long (last access: 24)
+  Slot 0: What Took You So Long (last access: 25)
   Slot 1: Take This (last access: 20)
   Slot 2: Intense (last access: 22)
   Slot 3: Destination (ASOT 2024 Anthem) (last access: 24)
@@ -801,12 +791,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "What Took You So Long"
   → Estimated beats: 589  → Compression precision factor: 1
 [Load Complete] 'What Took You So Long' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Destination (ASOT 2024 Anthem)) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: What Took You So Long
-Deck 1: [EMPTY]
+Deck 1: Destination (ASOT 2024 Anthem)
 Active Deck: 0
 ===================
 
@@ -822,7 +811,7 @@ Active Deck: 0
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
   Slot 0: What Took You So Long (last access: 26)
-  Slot 1: Just As You Are (last access: 26)
+  Slot 1: Just As You Are (last access: 27)
   Slot 2: Intense (last access: 22)
   Slot 3: Destination (ASOT 2024 Anthem) (last access: 24)
 ====================
@@ -837,11 +826,10 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Just As You Are"
   → Estimated beats: 470  → Compression precision factor: 1
 [Load Complete] 'Just As You Are' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (What Took You So Long) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: What Took You So Long
 Deck 1: Just As You Are
 Active Deck: 1
 ===================
@@ -859,7 +847,7 @@ Active Deck: 1
 [LRUCache] Status: 4/4 slots used
   Slot 0: What Took You So Long (last access: 26)
   Slot 1: Just As You Are (last access: 28)
-  Slot 2: The Air I Breathe (last access: 28)
+  Slot 2: The Air I Breathe (last access: 29)
   Slot 3: Destination (ASOT 2024 Anthem) (last access: 24)
 ====================
 [System] Delegating track transfer to MixingEngineService for: The Air I Breathe
@@ -874,12 +862,11 @@ Active Deck: 1
   → Estimated beats: 694  → Compression precision factor: 1
 [Sync BPM] Syncing BPM from 124 to 131
 [Load Complete] 'The Air I Breathe' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Just As You Are) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: The Air I Breathe
-Deck 1: [EMPTY]
+Deck 1: Just As You Are
 Active Deck: 0
 ===================
 
@@ -897,7 +884,7 @@ Active Deck: 0
   Slot 0: What Took You So Long (last access: 26)
   Slot 1: Just As You Are (last access: 28)
   Slot 2: The Air I Breathe (last access: 30)
-  Slot 3: For All Time (last access: 30)
+  Slot 3: For All Time (last access: 31)
 ====================
 [System] Delegating track transfer to MixingEngineService for: For All Time
 
@@ -910,11 +897,10 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "For All Time"
   → Estimated beats: 933  → Compression precision factor: 0.6
 [Load Complete] 'For All Time' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (The Air I Breathe) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: The Air I Breathe
 Deck 1: For All Time
 Active Deck: 1
 ===================
@@ -930,7 +916,7 @@ Active Deck: 1
 
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
-  Slot 0: We Control The Sunlight (last access: 32)
+  Slot 0: We Control The Sunlight (last access: 33)
   Slot 1: Just As You Are (last access: 28)
   Slot 2: The Air I Breathe (last access: 30)
   Slot 3: For All Time (last access: 32)
@@ -946,12 +932,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "We Control The Sunlight"
   → Estimated beats: 853  → Compression precision factor: 0.6
 [Load Complete] 'We Control The Sunlight' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (For All Time) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: We Control The Sunlight
-Deck 1: [EMPTY]
+Deck 1: For All Time
 Active Deck: 0
 ===================
 
@@ -967,7 +952,7 @@ Active Deck: 0
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
   Slot 0: We Control The Sunlight (last access: 34)
-  Slot 1: Blueprint (last access: 34)
+  Slot 1: Blueprint (last access: 35)
   Slot 2: The Air I Breathe (last access: 30)
   Slot 3: For All Time (last access: 32)
 ====================
@@ -982,11 +967,10 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Blueprint"
   → Estimated beats: 676  → Compression precision factor: 0.8
 [Load Complete] 'Blueprint' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (We Control The Sunlight) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: We Control The Sunlight
 Deck 1: Blueprint
 Active Deck: 1
 ===================
@@ -1004,7 +988,7 @@ Active Deck: 1
 [LRUCache] Status: 4/4 slots used
   Slot 0: We Control The Sunlight (last access: 34)
   Slot 1: Blueprint (last access: 36)
-  Slot 2: Homeward (last access: 36)
+  Slot 2: Homeward (last access: 37)
   Slot 3: For All Time (last access: 32)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Homeward
@@ -1018,12 +1002,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Homeward"
   → Estimated beats: 734  → Compression precision factor: 0.6
 [Load Complete] 'Homeward' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Blueprint) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Homeward
-Deck 1: [EMPTY]
+Deck 1: Blueprint
 Active Deck: 0
 ===================
 
@@ -1041,7 +1024,7 @@ Active Deck: 0
   Slot 0: We Control The Sunlight (last access: 34)
   Slot 1: Blueprint (last access: 36)
   Slot 2: Homeward (last access: 38)
-  Slot 3: We're Not Going Home (last access: 38)
+  Slot 3: We're Not Going Home (last access: 39)
 ====================
 [System] Delegating track transfer to MixingEngineService for: We're Not Going Home
 
@@ -1054,11 +1037,10 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "We're Not Going Home"
   → Estimated beats: 635  → Compression precision factor: 0.6
 [Load Complete] 'We're Not Going Home' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Homeward) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Homeward
 Deck 1: We're Not Going Home
 Active Deck: 1
 ===================
@@ -1074,7 +1056,7 @@ Active Deck: 1
 
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
-  Slot 0: Lemme Take You (last access: 40)
+  Slot 0: Lemme Take You (last access: 41)
   Slot 1: Blueprint (last access: 36)
   Slot 2: Homeward (last access: 38)
   Slot 3: We're Not Going Home (last access: 40)
@@ -1090,12 +1072,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Lemme Take You"
   → Estimated beats: 821  → Compression precision factor: 1
 [Load Complete] 'Lemme Take You' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (We're Not Going Home) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Lemme Take You
-Deck 1: [EMPTY]
+Deck 1: We're Not Going Home
 Active Deck: 0
 ===================
 
@@ -1110,7 +1091,7 @@ Active Deck: 0
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
   Slot 0: Lemme Take You (last access: 42)
-  Slot 1: Bloodstream (last access: 42)
+  Slot 1: Bloodstream (last access: 43)
   Slot 2: Homeward (last access: 38)
   Slot 3: We're Not Going Home (last access: 40)
 ====================
@@ -1124,11 +1105,10 @@ Active Deck: 0
 [WAVTrack::analyze_beatgrid] Analyzing beat grid for: "Bloodstream"
   → Estimated beats: 801  → Precision factor: 1 (uncompressed audio)
 [Load Complete] 'Bloodstream' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Lemme Take You) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Lemme Take You
 Deck 1: Bloodstream
 Active Deck: 1
 ===================
@@ -1146,7 +1126,7 @@ Active Deck: 1
 [LRUCache] Status: 4/4 slots used
   Slot 0: Lemme Take You (last access: 42)
   Slot 1: Bloodstream (last access: 44)
-  Slot 2: Rock Your Body Rock (last access: 44)
+  Slot 2: Rock Your Body Rock (last access: 45)
   Slot 3: We're Not Going Home (last access: 40)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Rock Your Body Rock
@@ -1160,12 +1140,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Rock Your Body Rock"
   → Estimated beats: 714  → Compression precision factor: 0.8
 [Load Complete] 'Rock Your Body Rock' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Bloodstream) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Rock Your Body Rock
-Deck 1: [EMPTY]
+Deck 1: Bloodstream
 Active Deck: 0
 ===================
 
@@ -1183,7 +1162,7 @@ Active Deck: 0
   Slot 0: Lemme Take You (last access: 42)
   Slot 1: Bloodstream (last access: 44)
   Slot 2: Rock Your Body Rock (last access: 46)
-  Slot 3: Voema (last access: 46)
+  Slot 3: Voema (last access: 47)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Voema
 
@@ -1196,11 +1175,10 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Voema"
   → Estimated beats: 574  → Compression precision factor: 0.6
 [Load Complete] 'Voema' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Rock Your Body Rock) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Rock Your Body Rock
 Deck 1: Voema
 Active Deck: 1
 ===================
@@ -1216,7 +1194,7 @@ Active Deck: 1
 
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
-  Slot 0: Not Coming Down (last access: 48)
+  Slot 0: Not Coming Down (last access: 49)
   Slot 1: Bloodstream (last access: 44)
   Slot 2: Rock Your Body Rock (last access: 46)
   Slot 3: Voema (last access: 48)
@@ -1232,12 +1210,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Not Coming Down"
   → Estimated beats: 699  → Compression precision factor: 0.6
 [Load Complete] 'Not Coming Down' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Voema) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Not Coming Down
-Deck 1: [EMPTY]
+Deck 1: Voema
 Active Deck: 0
 ===================
 
@@ -1253,7 +1230,7 @@ Active Deck: 0
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
   Slot 0: Not Coming Down (last access: 50)
-  Slot 1: Mo Chara (last access: 50)
+  Slot 1: Mo Chara (last access: 51)
   Slot 2: Rock Your Body Rock (last access: 46)
   Slot 3: Voema (last access: 48)
 ====================
@@ -1268,11 +1245,10 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Mo Chara"
   → Estimated beats: 660  → Compression precision factor: 0.8
 [Load Complete] 'Mo Chara' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Not Coming Down) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Not Coming Down
 Deck 1: Mo Chara
 Active Deck: 1
 ===================
@@ -1290,7 +1266,7 @@ Active Deck: 1
 [LRUCache] Status: 4/4 slots used
   Slot 0: Not Coming Down (last access: 50)
   Slot 1: Mo Chara (last access: 52)
-  Slot 2: Brain Box (last access: 52)
+  Slot 2: Brain Box (last access: 53)
   Slot 3: Voema (last access: 48)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Brain Box
@@ -1304,12 +1280,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Brain Box"
   → Estimated beats: 747  → Compression precision factor: 0.6
 [Load Complete] 'Brain Box' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Mo Chara) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Brain Box
-Deck 1: [EMPTY]
+Deck 1: Mo Chara
 Active Deck: 0
 ===================
 
@@ -1327,7 +1302,7 @@ Active Deck: 0
   Slot 0: Not Coming Down (last access: 50)
   Slot 1: Mo Chara (last access: 52)
   Slot 2: Brain Box (last access: 54)
-  Slot 3: Sweet Sorrow (last access: 54)
+  Slot 3: Sweet Sorrow (last access: 55)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Sweet Sorrow
 
@@ -1340,11 +1315,10 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Sweet Sorrow"
   → Estimated beats: 707  → Compression precision factor: 0.8
 [Load Complete] 'Sweet Sorrow' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Brain Box) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Brain Box
 Deck 1: Sweet Sorrow
 Active Deck: 1
 ===================
@@ -1360,7 +1334,7 @@ Active Deck: 1
 
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
-  Slot 0: Ligaya (last access: 56)
+  Slot 0: Ligaya (last access: 57)
   Slot 1: Mo Chara (last access: 52)
   Slot 2: Brain Box (last access: 54)
   Slot 3: Sweet Sorrow (last access: 56)
@@ -1376,12 +1350,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Ligaya"
   → Estimated beats: 660  → Compression precision factor: 0.8
 [Load Complete] 'Ligaya' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Sweet Sorrow) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Ligaya
-Deck 1: [EMPTY]
+Deck 1: Sweet Sorrow
 Active Deck: 0
 ===================
 
@@ -1396,7 +1369,7 @@ Active Deck: 0
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
   Slot 0: Ligaya (last access: 58)
-  Slot 1: Drum's A Weapon (last access: 58)
+  Slot 1: Drum's A Weapon (last access: 59)
   Slot 2: Brain Box (last access: 54)
   Slot 3: Sweet Sorrow (last access: 56)
 ====================
@@ -1410,11 +1383,10 @@ Active Deck: 0
 [WAVTrack::analyze_beatgrid] Analyzing beat grid for: "Drum's A Weapon"
   → Estimated beats: 520  → Precision factor: 1 (uncompressed audio)
 [Load Complete] 'Drum's A Weapon' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Ligaya) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Ligaya
 Deck 1: Drum's A Weapon
 Active Deck: 1
 ===================
@@ -1633,7 +1605,7 @@ Added 'Dance In The Sunlight (Deluxe Version)' to playlist 'lost_frequencies_tom
 [LRUCache] Status: 4/4 slots used
   Slot 0: Ligaya (last access: 58)
   Slot 1: Drum's A Weapon (last access: 60)
-  Slot 2: Black Thunderclouds (Lost Frequencies 2025 Intro) (last access: 60)
+  Slot 2: Black Thunderclouds (Lost Frequencies 2025 Intro) (last access: 61)
   Slot 3: Sweet Sorrow (last access: 56)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Black Thunderclouds (Lost Frequencies 2025 Intro)
@@ -1647,12 +1619,11 @@ Added 'Dance In The Sunlight (Deluxe Version)' to playlist 'lost_frequencies_tom
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Black Thunderclouds (Lost Frequencies 2025 Intro)"
   → Estimated beats: 662  → Compression precision factor: 0.8
 [Load Complete] 'Black Thunderclouds (Lost Frequencies 2025 Intro)' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Drum's A Weapon) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Black Thunderclouds (Lost Frequencies 2025 Intro)
-Deck 1: [EMPTY]
+Deck 1: Drum's A Weapon
 Active Deck: 0
 ===================
 
@@ -1669,7 +1640,7 @@ Active Deck: 0
   Slot 0: Ligaya (last access: 58)
   Slot 1: Drum's A Weapon (last access: 60)
   Slot 2: Black Thunderclouds (Lost Frequencies 2025 Intro) (last access: 62)
-  Slot 3: ID1 (last access: 62)
+  Slot 3: ID1 (last access: 63)
 ====================
 [System] Delegating track transfer to MixingEngineService for: ID1
 
@@ -1681,11 +1652,10 @@ Active Deck: 0
 [WAVTrack::analyze_beatgrid] Analyzing beat grid for: "ID1"
   → Estimated beats: 584  → Precision factor: 1 (uncompressed audio)
 [Load Complete] 'ID1' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Black Thunderclouds (Lost Frequencies 2025 Intro)) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Black Thunderclouds (Lost Frequencies 2025 Intro)
 Deck 1: ID1
 Active Deck: 1
 ===================
@@ -1701,7 +1671,7 @@ Active Deck: 1
 
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
-  Slot 0: Sun Is Shining (last access: 64)
+  Slot 0: Sun Is Shining (last access: 65)
   Slot 1: Drum's A Weapon (last access: 60)
   Slot 2: Black Thunderclouds (Lost Frequencies 2025 Intro) (last access: 62)
   Slot 3: ID1 (last access: 64)
@@ -1717,12 +1687,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Sun Is Shining"
   → Estimated beats: 533  → Compression precision factor: 0.8
 [Load Complete] 'Sun Is Shining' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (ID1) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Sun Is Shining
-Deck 1: [EMPTY]
+Deck 1: ID1
 Active Deck: 0
 ===================
 
@@ -1737,7 +1706,7 @@ Active Deck: 0
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
   Slot 0: Sun Is Shining (last access: 66)
-  Slot 1: Are You With Me (last access: 66)
+  Slot 1: Are You With Me (last access: 67)
   Slot 2: Black Thunderclouds (Lost Frequencies 2025 Intro) (last access: 62)
   Slot 3: ID1 (last access: 64)
 ====================
@@ -1751,11 +1720,10 @@ Active Deck: 0
 [WAVTrack::analyze_beatgrid] Analyzing beat grid for: "Are You With Me"
   → Estimated beats: 385  → Precision factor: 1 (uncompressed audio)
 [Load Complete] 'Are You With Me' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Sun Is Shining) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Sun Is Shining
 Deck 1: Are You With Me
 Active Deck: 1
 ===================
@@ -1773,7 +1741,7 @@ Active Deck: 1
 [LRUCache] Status: 4/4 slots used
   Slot 0: Sun Is Shining (last access: 66)
   Slot 1: Are You With Me (last access: 68)
-  Slot 2: Worry About Me (last access: 68)
+  Slot 2: Worry About Me (last access: 69)
   Slot 3: ID1 (last access: 64)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Worry About Me
@@ -1787,12 +1755,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Worry About Me"
   → Estimated beats: 576  → Compression precision factor: 0.8
 [Load Complete] 'Worry About Me' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Are You With Me) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Worry About Me
-Deck 1: [EMPTY]
+Deck 1: Are You With Me
 Active Deck: 0
 ===================
 
@@ -1809,7 +1776,7 @@ Active Deck: 0
   Slot 0: Sun Is Shining (last access: 66)
   Slot 1: Are You With Me (last access: 68)
   Slot 2: Worry About Me (last access: 70)
-  Slot 3: ID2 (last access: 70)
+  Slot 3: ID2 (last access: 71)
 ====================
 [System] Delegating track transfer to MixingEngineService for: ID2
 
@@ -1821,11 +1788,10 @@ Active Deck: 0
 [WAVTrack::analyze_beatgrid] Analyzing beat grid for: "ID2"
   → Estimated beats: 679  → Precision factor: 1 (uncompressed audio)
 [Load Complete] 'ID2' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Worry About Me) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Worry About Me
 Deck 1: ID2
 Active Deck: 1
 ===================
@@ -1840,7 +1806,7 @@ Active Deck: 1
 
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
-  Slot 0: Love Is The Only Thing (last access: 72)
+  Slot 0: Love Is The Only Thing (last access: 73)
   Slot 1: Are You With Me (last access: 68)
   Slot 2: Worry About Me (last access: 70)
   Slot 3: ID2 (last access: 72)
@@ -1855,12 +1821,11 @@ Active Deck: 1
 [WAVTrack::analyze_beatgrid] Analyzing beat grid for: "Love Is The Only Thing"
   → Estimated beats: 889  → Precision factor: 1 (uncompressed audio)
 [Load Complete] 'Love Is The Only Thing' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (ID2) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Love Is The Only Thing
-Deck 1: [EMPTY]
+Deck 1: ID2
 Active Deck: 0
 ===================
 
@@ -1875,7 +1840,7 @@ Active Deck: 0
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
   Slot 0: Love Is The Only Thing (last access: 74)
-  Slot 1: Kick The Nation (last access: 74)
+  Slot 1: Kick The Nation (last access: 75)
   Slot 2: Worry About Me (last access: 70)
   Slot 3: ID2 (last access: 72)
 ====================
@@ -1889,11 +1854,10 @@ Active Deck: 0
 [WAVTrack::analyze_beatgrid] Analyzing beat grid for: "Kick The Nation"
   → Estimated beats: 541  → Precision factor: 1 (uncompressed audio)
 [Load Complete] 'Kick The Nation' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Love Is The Only Thing) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Love Is The Only Thing
 Deck 1: Kick The Nation
 Active Deck: 1
 ===================
@@ -1911,7 +1875,7 @@ Active Deck: 1
 [LRUCache] Status: 4/4 slots used
   Slot 0: Love Is The Only Thing (last access: 74)
   Slot 1: Kick The Nation (last access: 76)
-  Slot 2: Summer Skies (I Love To Cry) (last access: 76)
+  Slot 2: Summer Skies (I Love To Cry) (last access: 77)
   Slot 3: ID2 (last access: 72)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Summer Skies (I Love To Cry)
@@ -1925,12 +1889,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Summer Skies (I Love To Cry)"
   → Estimated beats: 781  → Compression precision factor: 0.8
 [Load Complete] 'Summer Skies (I Love To Cry)' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Kick The Nation) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Summer Skies (I Love To Cry)
-Deck 1: [EMPTY]
+Deck 1: Kick The Nation
 Active Deck: 0
 ===================
 
@@ -1947,7 +1910,7 @@ Active Deck: 0
   Slot 0: Love Is The Only Thing (last access: 74)
   Slot 1: Kick The Nation (last access: 76)
   Slot 2: Summer Skies (I Love To Cry) (last access: 78)
-  Slot 3: Kesariya (last access: 78)
+  Slot 3: Kesariya (last access: 79)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Kesariya
 
@@ -1959,11 +1922,10 @@ Active Deck: 0
 [WAVTrack::analyze_beatgrid] Analyzing beat grid for: "Kesariya"
   → Estimated beats: 460  → Precision factor: 1 (uncompressed audio)
 [Load Complete] 'Kesariya' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Summer Skies (I Love To Cry)) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Summer Skies (I Love To Cry)
 Deck 1: Kesariya
 Active Deck: 1
 ===================
@@ -1978,7 +1940,7 @@ Active Deck: 1
 
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
-  Slot 0: ID2 (last access: 80)
+  Slot 0: ID2 (last access: 81)
   Slot 1: Kick The Nation (last access: 76)
   Slot 2: Summer Skies (I Love To Cry) (last access: 78)
   Slot 3: Kesariya (last access: 80)
@@ -1993,12 +1955,11 @@ Active Deck: 1
 [WAVTrack::analyze_beatgrid] Analyzing beat grid for: "ID2"
   → Estimated beats: 679  → Precision factor: 1 (uncompressed audio)
 [Load Complete] 'ID2' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Kesariya) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: ID2
-Deck 1: [EMPTY]
+Deck 1: Kesariya
 Active Deck: 0
 ===================
 
@@ -2014,7 +1975,7 @@ Active Deck: 0
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
   Slot 0: ID2 (last access: 82)
-  Slot 1: Head Down (last access: 82)
+  Slot 1: Head Down (last access: 83)
   Slot 2: Summer Skies (I Love To Cry) (last access: 78)
   Slot 3: Kesariya (last access: 80)
 ====================
@@ -2029,11 +1990,10 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Head Down"
   → Estimated beats: 711  → Compression precision factor: 0.8
 [Load Complete] 'Head Down' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (ID2) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: ID2
 Deck 1: Head Down
 Active Deck: 1
 ===================
@@ -2050,7 +2010,7 @@ Active Deck: 1
 [LRUCache] Status: 4/4 slots used
   Slot 0: ID2 (last access: 82)
   Slot 1: Head Down (last access: 84)
-  Slot 2: The Feeling (last access: 84)
+  Slot 2: The Feeling (last access: 85)
   Slot 3: Kesariya (last access: 80)
 ====================
 [System] Delegating track transfer to MixingEngineService for: The Feeling
@@ -2063,12 +2023,11 @@ Active Deck: 1
 [WAVTrack::analyze_beatgrid] Analyzing beat grid for: "The Feeling"
   → Estimated beats: 914  → Precision factor: 1 (uncompressed audio)
 [Load Complete] 'The Feeling' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Head Down) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: The Feeling
-Deck 1: [EMPTY]
+Deck 1: Head Down
 Active Deck: 0
 ===================
 
@@ -2092,11 +2051,10 @@ Active Deck: 0
 [WAVTrack::analyze_beatgrid] Analyzing beat grid for: "The Feeling"
   → Estimated beats: 914  → Precision factor: 1 (uncompressed audio)
 [Load Complete] 'The Feeling' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (The Feeling) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: The Feeling
 Deck 1: The Feeling
 Active Deck: 1
 ===================
@@ -2115,7 +2073,7 @@ Active Deck: 1
   Slot 0: ID2 (last access: 82)
   Slot 1: Head Down (last access: 84)
   Slot 2: The Feeling (last access: 88)
-  Slot 3: Just Wanna Know (last access: 88)
+  Slot 3: Just Wanna Know (last access: 89)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Just Wanna Know
 
@@ -2128,12 +2086,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Just Wanna Know"
   → Estimated beats: 944  → Compression precision factor: 0.6
 [Load Complete] 'Just Wanna Know' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (The Feeling) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Just Wanna Know
-Deck 1: [EMPTY]
+Deck 1: The Feeling
 Active Deck: 0
 ===================
 
@@ -2147,7 +2104,7 @@ Active Deck: 0
 
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
-  Slot 0: Let Me Blow Ya Mind (Netsky Bootleg) (last access: 90)
+  Slot 0: Let Me Blow Ya Mind (Netsky Bootleg) (last access: 91)
   Slot 1: Head Down (last access: 84)
   Slot 2: The Feeling (last access: 88)
   Slot 3: Just Wanna Know (last access: 90)
@@ -2162,11 +2119,10 @@ Active Deck: 0
 [WAVTrack::analyze_beatgrid] Analyzing beat grid for: "Let Me Blow Ya Mind (Netsky Bootleg)"
   → Estimated beats: 935  → Precision factor: 1 (uncompressed audio)
 [Load Complete] 'Let Me Blow Ya Mind (Netsky Bootleg)' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Just Wanna Know) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Just Wanna Know
 Deck 1: Let Me Blow Ya Mind (Netsky Bootleg)
 Active Deck: 1
 ===================
@@ -2183,7 +2139,7 @@ Active Deck: 1
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
   Slot 0: Let Me Blow Ya Mind (Netsky Bootleg) (last access: 92)
-  Slot 1: Where Are You Now (last access: 92)
+  Slot 1: Where Are You Now (last access: 93)
   Slot 2: The Feeling (last access: 88)
   Slot 3: Just Wanna Know (last access: 90)
 ====================
@@ -2198,12 +2154,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Where Are You Now"
   → Estimated beats: 410  → Compression precision factor: 1
 [Load Complete] 'Where Are You Now' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Let Me Blow Ya Mind (Netsky Bootleg)) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Where Are You Now
-Deck 1: [EMPTY]
+Deck 1: Let Me Blow Ya Mind (Netsky Bootleg)
 Active Deck: 0
 ===================
 
@@ -2228,11 +2183,10 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Where Are You Now"
   → Estimated beats: 410  → Compression precision factor: 1
 [Load Complete] 'Where Are You Now' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Where Are You Now) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Where Are You Now
 Deck 1: Where Are You Now
 Active Deck: 1
 ===================
@@ -2250,7 +2204,7 @@ Active Deck: 1
 [LRUCache] Status: 4/4 slots used
   Slot 0: Let Me Blow Ya Mind (Netsky Bootleg) (last access: 92)
   Slot 1: Where Are You Now (last access: 96)
-  Slot 2: Voodoo People (last access: 96)
+  Slot 2: Voodoo People (last access: 97)
   Slot 3: Just Wanna Know (last access: 90)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Voodoo People
@@ -2265,12 +2219,11 @@ Active Deck: 1
   → Estimated beats: 782  → Compression precision factor: 0.8
 [Sync BPM] Syncing BPM from 120 to 128
 [Load Complete] 'Voodoo People' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Where Are You Now) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Voodoo People
-Deck 1: [EMPTY]
+Deck 1: Where Are You Now
 Active Deck: 0
 ===================
 
@@ -2288,7 +2241,7 @@ Active Deck: 0
   Slot 0: Let Me Blow Ya Mind (Netsky Bootleg) (last access: 92)
   Slot 1: Where Are You Now (last access: 96)
   Slot 2: Voodoo People (last access: 98)
-  Slot 3: Freestyler (Rock The Microphone) (last access: 98)
+  Slot 3: Freestyler (Rock The Microphone) (last access: 99)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Freestyler (Rock The Microphone)
 
@@ -2301,11 +2254,10 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Freestyler (Rock The Microphone)"
   → Estimated beats: 512  → Compression precision factor: 0.6
 [Load Complete] 'Freestyler (Rock The Microphone)' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Voodoo People) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Voodoo People
 Deck 1: Freestyler (Rock The Microphone)
 Active Deck: 1
 ===================
@@ -2320,7 +2272,7 @@ Active Deck: 1
 
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
-  Slot 0: High Hopes (last access: 100)
+  Slot 0: High Hopes (last access: 101)
   Slot 1: Where Are You Now (last access: 96)
   Slot 2: Voodoo People (last access: 98)
   Slot 3: Freestyler (Rock The Microphone) (last access: 100)
@@ -2335,12 +2287,11 @@ Active Deck: 1
 [WAVTrack::analyze_beatgrid] Analyzing beat grid for: "High Hopes"
   → Estimated beats: 500  → Precision factor: 1 (uncompressed audio)
 [Load Complete] 'High Hopes' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Freestyler (Rock The Microphone)) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: High Hopes
-Deck 1: [EMPTY]
+Deck 1: Freestyler (Rock The Microphone)
 Active Deck: 0
 ===================
 
@@ -2356,7 +2307,7 @@ Active Deck: 0
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
   Slot 0: High Hopes (last access: 102)
-  Slot 1: Reality (last access: 102)
+  Slot 1: Reality (last access: 103)
   Slot 2: Voodoo People (last access: 98)
   Slot 3: Freestyler (Rock The Microphone) (last access: 100)
 ====================
@@ -2371,11 +2322,10 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Reality"
   → Estimated beats: 534  → Compression precision factor: 0.8
 [Load Complete] 'Reality' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (High Hopes) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: High Hopes
 Deck 1: Reality
 Active Deck: 1
 ===================
@@ -2393,7 +2343,7 @@ Active Deck: 1
 [LRUCache] Status: 4/4 slots used
   Slot 0: High Hopes (last access: 102)
   Slot 1: Reality (last access: 104)
-  Slot 2: Black Friday (Pretty Like The Sun) (last access: 104)
+  Slot 2: Black Friday (Pretty Like The Sun) (last access: 105)
   Slot 3: Freestyler (Rock The Microphone) (last access: 100)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Black Friday (Pretty Like The Sun)
@@ -2408,12 +2358,11 @@ Active Deck: 1
   → Estimated beats: 534  → Compression precision factor: 0.8
 [Sync BPM] Syncing BPM from 140 to 130
 [Load Complete] 'Black Friday (Pretty Like The Sun)' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Reality) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Black Friday (Pretty Like The Sun)
-Deck 1: [EMPTY]
+Deck 1: Reality
 Active Deck: 0
 ===================
 
@@ -2438,11 +2387,10 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Black Friday (Pretty Like The Sun)"
   → Estimated beats: 534  → Compression precision factor: 0.8
 [Load Complete] 'Black Friday (Pretty Like The Sun)' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Black Friday (Pretty Like The Sun)) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Black Friday (Pretty Like The Sun)
 Deck 1: Black Friday (Pretty Like The Sun)
 Active Deck: 1
 ===================
@@ -2461,7 +2409,7 @@ Active Deck: 1
   Slot 0: High Hopes (last access: 102)
   Slot 1: Reality (last access: 104)
   Slot 2: Black Friday (Pretty Like The Sun) (last access: 108)
-  Slot 3: Innerbloom (RUMPUS Edit) (last access: 108)
+  Slot 3: Innerbloom (RUMPUS Edit) (last access: 109)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Innerbloom (RUMPUS Edit)
 
@@ -2475,12 +2423,11 @@ Active Deck: 1
   → Estimated beats: 518  → Compression precision factor: 1
 [Sync BPM] Syncing BPM from 123 to 131
 [Load Complete] 'Innerbloom (RUMPUS Edit)' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Black Friday (Pretty Like The Sun)) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Innerbloom (RUMPUS Edit)
-Deck 1: [EMPTY]
+Deck 1: Black Friday (Pretty Like The Sun)
 Active Deck: 0
 ===================
 
@@ -2495,7 +2442,7 @@ Active Deck: 0
 
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
-  Slot 0: Timeless (last access: 110)
+  Slot 0: Timeless (last access: 111)
   Slot 1: Reality (last access: 104)
   Slot 2: Black Friday (Pretty Like The Sun) (last access: 108)
   Slot 3: Innerbloom (RUMPUS Edit) (last access: 110)
@@ -2511,11 +2458,10 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Timeless"
   → Estimated beats: 573  → Compression precision factor: 0.8
 [Load Complete] 'Timeless' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Innerbloom (RUMPUS Edit)) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Innerbloom (RUMPUS Edit)
 Deck 1: Timeless
 Active Deck: 1
 ===================
@@ -2532,7 +2478,7 @@ Active Deck: 1
 === Cache Status ===
 [LRUCache] Status: 4/4 slots used
   Slot 0: Timeless (last access: 112)
-  Slot 1: Sweet Disposition (A Moment A Love) (last access: 112)
+  Slot 1: Sweet Disposition (A Moment A Love) (last access: 113)
   Slot 2: Black Friday (Pretty Like The Sun) (last access: 108)
   Slot 3: Innerbloom (RUMPUS Edit) (last access: 110)
 ====================
@@ -2547,12 +2493,11 @@ Active Deck: 1
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Sweet Disposition (A Moment A Love)"
   → Estimated beats: 883  → Compression precision factor: 1
 [Load Complete] 'Sweet Disposition (A Moment A Love)' is now loaded on deck 0
-[Unload] Unloading previous deck 1 (Timeless) 
 [Active Deck] Switched to deck 0
 
 === Deck Status ===
 Deck 0: Sweet Disposition (A Moment A Love)
-Deck 1: [EMPTY]
+Deck 1: Timeless
 Active Deck: 0
 ===================
 
@@ -2569,7 +2514,7 @@ Active Deck: 0
 [LRUCache] Status: 4/4 slots used
   Slot 0: Timeless (last access: 112)
   Slot 1: Sweet Disposition (A Moment A Love) (last access: 114)
-  Slot 2: Dance In The Sunlight (Deluxe Version) (last access: 114)
+  Slot 2: Dance In The Sunlight (Deluxe Version) (last access: 115)
   Slot 3: Innerbloom (RUMPUS Edit) (last access: 110)
 ====================
 [System] Delegating track transfer to MixingEngineService for: Dance In The Sunlight (Deluxe Version)
@@ -2583,27 +2528,26 @@ Active Deck: 0
 [MP3Track::analyze_beatgrid] Analyzing beat grid for: "Dance In The Sunlight (Deluxe Version)"
   → Estimated beats: 748  → Compression precision factor: 0.8
 [Load Complete] 'Dance In The Sunlight (Deluxe Version)' is now loaded on deck 1
-[Unload] Unloading previous deck 0 (Sweet Disposition (A Moment A Love)) 
 [Active Deck] Switched to deck 1
 
 === Deck Status ===
-Deck 0: [EMPTY]
+Deck 0: Sweet Disposition (A Moment A Love)
 Deck 1: Dance In The Sunlight (Deluxe Version)
 Active Deck: 1
 ===================
 
 === DJ Session Summary ===
 Session: Interactive Session
-Tracks processed: 28
+Tracks processed: 58
 Cache hits: 3
-Cache misses: 25
-Cache evictions: 25
-Deck A loads: 14
-Deck B loads: 14
-Transitions: 28
+Cache misses: 55
+Cache evictions: 51
+Deck A loads: 29
+Deck B loads: 29
+Transitions: 58
 Errors: 0
 === Session Complete ===
-Session cancelled by user or all playlists played. 
+Session cancelled by user or all playlists played.
 ============= INTERACTIVE SESSION ENDED =============
 
 Shutting down DJ Session System: Interactive Session

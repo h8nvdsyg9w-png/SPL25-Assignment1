@@ -158,7 +158,6 @@ void DJSession::simulate_dj_performance() {
         for(const auto&  curr : session_config.playlists){
             playlists_names.push_back(curr.first);
         }
-        // MAYBE SORT LETS ASK LOTEM
         for(const auto& playlist_name : playlists_names){
             if(!load_playlist(playlist_name)){
                 std::cout << "[ERROR] failed to load playlist : " << playlist_name << "\n" ;
@@ -175,7 +174,6 @@ void DJSession::simulate_dj_performance() {
                 }
             }
             print_session_summary();
-            stats = SessionStats();
         }
     }else{
         while(true){
@@ -199,7 +197,7 @@ void DJSession::simulate_dj_performance() {
             stats = SessionStats();
         }
     }
-    std::cout << "Session cancelled by user or all playlists played. \n" ;
+    std::cout << "Session cancelled by user or all playlists played.\n" ;
 }
 
 

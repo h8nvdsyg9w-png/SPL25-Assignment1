@@ -23,7 +23,7 @@ bool LRUCache::put(PointerWrapper<AudioTrack> track) {
     }
     if(contains(track->get_title())){
         size_t slot = findSlot(track->get_title());
-        slots[slot].access(access_counter++);
+        slots[slot].access(++access_counter);
         return false;
     }else{
         bool evicted = false;
@@ -34,7 +34,7 @@ bool LRUCache::put(PointerWrapper<AudioTrack> track) {
             }
         }
         size_t mptSlot = findEmptySlot();
-        slots[mptSlot].store(std::move(track) , access_counter++);
+        slots[mptSlot].store(std::move(track) , ++access_counter);
         return evicted;
    
     }
