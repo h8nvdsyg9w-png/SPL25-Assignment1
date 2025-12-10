@@ -18,15 +18,15 @@ void MP3Track::load() {
     if(has_id3_tags){
         std::cout << "  → Processing ID3 metadata (artist info, album art, etc.)...\n";
     }else{
-        std::cout <<"  → No ID3 tags found \n";
+        std::cout <<"  → No ID3 tags found\n";
     }
-    std::cout <<"  → Decoding MP3 frames... \n";
-    std::cout <<"  → Load complete. \n";
+    std::cout <<"  → Decoding MP3 frames...\n";
+    std::cout <<"  → Load complete.\n";
 }
 
 void MP3Track::analyze_beatgrid() {
      std::cout << "[MP3Track::analyze_beatgrid] Analyzing beat grid for: \"" << title << "\"\n";
-    double est_beats(duration_seconds * bpm / 60.0);
+    int est_beats(duration_seconds * bpm / 60);
     double precision_factor(bitrate / 320.0);
     std::cout <<"  → Estimated beats: "<<est_beats << "  → Compression precision factor: " << precision_factor <<"\n";
 }

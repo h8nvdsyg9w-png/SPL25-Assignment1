@@ -17,13 +17,13 @@ void WAVTrack::load() {
           << sample_rate << "Hz/" << bit_depth << "bit (uncompressed)...\n";
 
     long long size(duration_seconds * sample_rate * (bit_depth/8) * 2);
-    std::cout<< "  → Estimated file size: " << size << " bytes \n";
-    std::cout<< "  → Fast Loading due to uncompressed format \n";
+    std::cout<< "  → Estimated file size: " << size << " bytes\n";
+    std::cout<< "  → Fast loading due to uncompressed format.\n";
 }
 
 void WAVTrack::analyze_beatgrid() {
     std::cout << "[WAVTrack::analyze_beatgrid] Analyzing beat grid for: \"" << title << "\"\n";
-    double est_beats(duration_seconds * bpm / 60.0);
+    int est_beats(duration_seconds * bpm / 60);
     std::cout <<"  → Estimated beats: " <<est_beats <<"  → Precision factor: 1 (uncompressed audio) \n";
 
 }
