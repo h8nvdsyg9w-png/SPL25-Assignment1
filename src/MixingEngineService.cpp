@@ -35,10 +35,10 @@ MixingEngineService::~MixingEngineService() {
  * @return: Index of the deck where track was loaded, or -1 on failure
  */
 int MixingEngineService::loadTrackToDeck(const AudioTrack& track) {
-    std::cout<< "\n=== Loading Track to Deck === \n" ; 
+    std::cout<< "\n=== Loading Track to Deck ===\n" ; 
     PointerWrapper<AudioTrack> pw(track.clone());
     if(!pw){
-        std::cout<< "[ERROR] Track: " << track.get_title() << " failed to clone \n";
+        std::cout<< "[ERROR] Track: " << track.get_title() << " failed to clone\n";
         return -1;
     }
     size_t targetDeck = 1 - active_deck;
@@ -60,7 +60,7 @@ int MixingEngineService::loadTrackToDeck(const AudioTrack& track) {
         decks[active_deck] = nullptr;
     }
     active_deck = targetDeck;
-    std::cout << "[Active Deck] switched to deck " << targetDeck << "\n";
+    std::cout << "[Active Deck] Switched to deck " << targetDeck << "\n";
     return targetDeck;
 }
 

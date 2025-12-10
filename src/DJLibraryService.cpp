@@ -5,6 +5,7 @@
 #include <iostream>
 #include <memory>
 #include <filesystem>
+#include <algorithm>
 
 
 DJLibraryService::DJLibraryService(const Playlist& playlist) 
@@ -107,6 +108,7 @@ void DJLibraryService::loadPlaylistFromIndices(const std::string& playlist_name,
 std::vector<std::string> DJLibraryService::getTrackTitles() const {
     std::vector<std::string> toRet;
     std::vector<AudioTrack*> tracks = playlist.getTracks();
+    std::reverse(tracks.begin(), tracks.end());
     for(const AudioTrack* track : tracks){
         toRet.push_back(track->get_title());
     }
