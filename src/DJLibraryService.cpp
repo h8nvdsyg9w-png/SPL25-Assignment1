@@ -20,7 +20,7 @@ DJLibraryService::~DJLibraryService() {
     library.clear();
 }
 
-/**
+/**maek
  * @brief Load a playlist from track indices referencing the library
  * @param library_tracks Vector of track info from config
  */
@@ -97,7 +97,7 @@ void DJLibraryService::loadPlaylistFromIndices(const std::string& playlist_name,
             }
         }
     }
-    std::cout << "[INFO] Playlist loaded: " << playlist_name << " (" << playlist.get_track_count() << " tracks) \n" ; 
+    std::cout << "[INFO] Playlist loaded: " << playlist_name << " (" << playlist.get_track_count() << " tracks)\n" ; 
 }
 
 /**

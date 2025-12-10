@@ -24,7 +24,7 @@ void WAVTrack::load() {
 void WAVTrack::analyze_beatgrid() {
     std::cout << "[WAVTrack::analyze_beatgrid] Analyzing beat grid for: \"" << title << "\"\n";
     int est_beats(duration_seconds * bpm / 60);
-    std::cout <<"  → Estimated beats: " <<est_beats <<"  → Precision factor: 1 (uncompressed audio) \n";
+    std::cout <<"  → Estimated beats: " <<est_beats <<"  → Precision factor: 1 (uncompressed audio)\n";
 
 }
 
